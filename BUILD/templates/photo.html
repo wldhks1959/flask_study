@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>집 등록하기</title><style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>사진 등록하기</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -674,13 +674,9 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="f0ec7114-b64b-4437-a125-b874628db506" class="page sans"><header><h1 class="page-title">집 등록하기</h1>
-
-	<form action="/applyPhoto" method="get">
-	<input placeholder="위치를 입력하시오." required name = "location">
-	<input type="checkbox" name="clean" value="clean">
-	<textarea name="built" placeholder="빌트인 항목" cols="45" row="4" required></textarea>
-	<button>사진 이어서 입력하기</button>
- 	</form>
-
+</style></head><body><article id="a9de5b91-ce49-4a56-806b-1585d59db332" class="page sans"><header><h1 class="page-title">사진 등록하기</h1><p class="page-description"></p><table class="properties"><tbody></tbody></table></header><div class="page-body"><p id="9ab73b64-5e27-4718-8a4d-62074e2a4062" class="">사진 등록하기</p><p id="162e7eb9-ca6f-474a-b034-5e9f674213dd" class="">
+<!-- form 추가 -->
+ <form method="POST" enctype="multipart/form-data" action="{{url_for('upload_done')}}">
+	<input type="file" name="file">
+	<input type="submit">
 </p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
